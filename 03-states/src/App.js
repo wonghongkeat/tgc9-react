@@ -1,12 +1,18 @@
-import React from 'react'
 import NumberBox from './NumberBox'
+import ImageSwitcher from './ImageSwitcher'
+import Counter from './Counter'
+import Timer from './Timer'
 
 function App() {
   return (
-      <div className='App'>
-          <NumberBox startingNum={1001}/>
-      </div>
-  )
+    <div className="App">
+        <Timer/>
+        <Counter/>
+        <NumberBox startingNumber={42}/>
+        <ImageSwitcher/>
+
+    </div>
+  );
 }
 
 export default App;

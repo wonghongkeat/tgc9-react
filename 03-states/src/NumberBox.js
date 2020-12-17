@@ -8,13 +8,16 @@ export default class NumberBox extends React.Component {
     // this holds all the state variables
     // to access props in a class based environment, we have to put the this. infront 
     state = {
-        number: this.props.startingNum
+        number: this.props.startingNum,
+        
     }
     render() {
         return (
             <React.Fragment>
                 <div>
                     <h1>{this.state.number}</h1>
+ 
+                    
                 </div>
 
                 <button onClick={this.increment}>add</button>
