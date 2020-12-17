@@ -61,7 +61,6 @@ function App() {
             {sayGoodbye()}
             <ImageFrame />
             <BorderedImageFrame imageURL={require('./duck.png').default} />
-
             <SumOfTwo num1={3} num2={5} />
 
         </React.Fragment>
