@@ -16,12 +16,23 @@ function ImageFrame(){
     return <img src={require('./duck.png').default}/>
 }
 
+// labsheet 2.1 handson
+function BorderedImageFrame(){
+    return <img style={{
+        'borderColor':'red',
+        'borderWidth': '10px',
+        'borderStyle':'dotted',
+        'borderRadius':'100px'
+    }} src={require('./duck.png').default}/>
+}
+
 function App() {
   return (
    <React.Fragment>
 <h1>{sayHello()}</h1>
   {sayGoodbye()}
   <ImageFrame/>
+  <BorderedImageFrame/>
 
    </React.Fragment>
   )
