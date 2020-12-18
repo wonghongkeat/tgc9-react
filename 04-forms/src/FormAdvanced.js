@@ -8,7 +8,8 @@ export default class FormAdvanced extends React.Component {
         'email': '',
         'color': '',
         'day': '',
-        'fruits': ''
+        'fruits': '',
+        'country':''
     }
 
     render() {
@@ -43,14 +44,23 @@ export default class FormAdvanced extends React.Component {
                     <input type='radio' name='day' value='afternoon' onChange={this.udateFormField} checked={this.state.day === 'afternoon'} />afternoon
                     <input type='radio' name='day' value='evening' onChange={this.udateFormField} checked={this.state.day === 'evening'} />evening
 
-                  <br></br>
+                    <br></br>
                     <br></br>
                     <label>fruits</label>
                     <br></br>
-                    <input type='checkbox' name='fruits' value='orange' onChange={this.updateFruits} checked={this.state.fruits.includes('orange')}/>orange
-                    <input type='checkbox' name='fruits' value='apple' onChange={this.updateFruits} checked={this.state.fruits.includes('apple')}/>apple
-                    <input type='checkbox' name='fruits' value='mango' onChange={this.updateFruits} checked={this.state.fruits.includes('mango')}/>mango
+                    <input type='checkbox' name='fruits' value='orange' onChange={this.updateFruits} checked={this.state.fruits.includes('orange')} />orange
+                    <input type='checkbox' name='fruits' value='apple' onChange={this.updateFruits} checked={this.state.fruits.includes('apple')} />apple
+                    <input type='checkbox' name='fruits' value='mango' onChange={this.updateFruits} checked={this.state.fruits.includes('mango')} />mango
+                    <br></br>
+                    <br></br>
+                    <label>Country</label>
+                    <br></br>
+                    <select name="country" onChange={this.udateFormField} /*value={this.state.country}*/>
+                        <option value='sg' checked={this.state.country === 'sg'}>Singpore</option>
+                        <option value='my'checked={this.state.country === 'my'}>Malaysia</option>
+                        <option value='th'checked={this.state.country === 'th'}>Thailand</option>
 
+                    </select>
 
 
                 </div>
