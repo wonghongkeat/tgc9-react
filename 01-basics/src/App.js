@@ -7,7 +7,7 @@ function App() {
         <React.Fragment>
             <h1>Hello world</h1>
             <button>click me</button>
-            <p>random number: {Math.floor(Math.random() * 6) + 1}</p>   {/* any code in the {} will be javascript syntax */}
+            <p>random number: {Math.floor(Math.random() * 6) + 1}</p>   /* any code in the {} will be javascript syntax */
             <img src={duck} alt='duck'/>
             <p style={{
                 'color':'red',
