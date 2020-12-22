@@ -147,7 +147,7 @@ export default class TaskList extends React.Component {
       newTaskTitle: "",
       newTaskDate: ""
     });
-  };
+    };
 
   beginEditTask(task) {
     this.setState({
